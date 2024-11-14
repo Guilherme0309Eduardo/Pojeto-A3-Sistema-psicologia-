@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/main.css">
+
+    <title>Página Prontuário</title>
+</head>
+<body>
+
+<div class="caixa-prontuario">
+    <fieldset>
+        <legend>Serviço escola de psicologia - UNICURITIBA</legend>
+    
+        <form action="">
+            <label for="num-prontuario">Número do prontuário</label>
+                <input type="number" id="num-prontuario" name="numero-prontuario" class="campo-prontuario">
+    
+            <label for="data-abertura-atendimentos">Data de abertura dos atendimentos</label>
+                <input type="date" id="data-abertura-atendimentos" name="data-abertura-atendimentos" class="campo-prontuario">
+    
+            <label for="nome-completo">Nome completo</label>
+                <input type="text" id="nome-completo" name="nome-completo" class="campo-prontuario">
+    
+            <label for="data-nascimento">Data de nascimento</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" class="campo-prontuario">
+    
+    <fieldset>
+        <legend>Gênero</legend>
+
+            <input type="radio" id="feminino" name="genero" value="feminino" class="campo-prontuario">
+                <label for="feminino">Feminino</label>
+    
+            <input type="radio" id="masculino" name="genero" value="masculino" class="campo-prontuario">
+                <label for="masculino">Masculino</label>
+    
+                <label for="outro">Outro</label>
+            <input type="text" id="outro" name="genero" class="campo-prontuario">
+
+    </fieldset>
+    
+        <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" class="campo-prontuario">
+    
+        <label for="telefone">Telefone(s)</label>
+            <input type="number" id="telefone" name="telefone" class="campo-prontuario">
+    
+        <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" class="campo-prontuario">
+    
+        <fieldset>
+            <legend>Contato de emergência</legend>
+
+                <label for="nome-contato-emergencia">Nome</label>
+                    <input type="text" id="nome-contato-emergencia" name="nome-contato-emergencia" class="campo-prontuario">
+    
+                <label for="telefone-contato-emergencia">Telefone</label>
+                    <input type="number" id="telefone-contato-emergencia" name="telefone-contato-emergencia" class="campo-prontuario">
+        </fieldset>
+    
+            <label for="escolaridade">Escolaridade</label>
+                <input type="text" id="escolaridade" name="escolaridade" class="campo-prontuario">
+    
+            <label for="ocupacao">Ocupação</label>
+                <input type="text" id="ocupacao" name="ocupacao" class="campo-prontuario">
+        </form>
+    
+        <fieldset>
+            <legend>Necessidade especial</legend>
+
+                <input type="radio" id="cognitiva" name="necessidade-especial" value="cognitiva" class="campo-prontuario">
+                    <label for="cognitiva">Cognitiva</label>
+    
+                <input type="radio" id="locomocao" name="necessidade-especial" value="locomocao" class="campo-prontuario">
+                    <label for="locomocao">Locomoção</label>
+    
+                <input type="radio" id="visao" name="necessidade-especial" value="visao" class="campo-prontuario">
+                    <label for="visao">Visão</label>
+    
+                <input type="radio" id="audicao" name="necessidade-especial" value="audicao" class="campo-prontuario">
+                    <label for="audicao">Audição</label>
+    
+                <label for="necessidade-outros">Outras</label>
+                    <input type="text" id="necessidade-outros" name="necessidade-outros" class="campo-prontuario">
+
+        </fieldset>
+
+            <label for="aluno-a">Aluno(a)</label>
+                <input type="text" id="aluno-a" name="aluno-a" class="campo-prontuario">
+    
+            <label for="professor-a">Professor(a)</label>
+                <input type="text" id="professor-a" name="professor-a" class="campo-prontuario">
+    </fieldset>
+
+        <div class="prontuario">
+            <fieldset>
+                <legend>Prontuário</legend>
+
+                <form action="">
+                    <div> 
+                        <p><b>Avaliação de demanda e definição dos objetivos do trabalho / Registro da evolução dos atendimentos e principais observações clínicas / Registro dos procedimentos adotados / Registro de encaminhamento ou encerramento</b></p>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <th>Data</th>
+                            <th>Hora</th>
+                            <th>conteudo</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="date">
+                            </td>
+
+                            <td>
+                                <input type="time">
+                            </td>
+
+                            <td>
+                                <textarea name="" id=""></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                  
+                </form>
+                
+                <fieldset>
+                    <legend>Anotações</legend>
+
+                    <label for="anotacoes"></label>
+                    <textarea name="anotacoes" id="text-area-anotacoes"></textarea>
+                </fieldset>
+
+            </fieldset>
+        </div>
+
+        <input type="submit" id="submit">
+    </div>
+    
+</body>
+</html>
